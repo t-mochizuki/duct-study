@@ -2,7 +2,10 @@
  {:duct.core/project-ns foobar+api
 
   :duct.router/cascading
-  []}
+  [#ig/ref :foobar+api.handler/example]
+
+  :foobar+api.handler/example
+  {}}
 
  :duct.profile/dev   #duct/include "dev"
  :duct.profile/local #duct/include "local"
